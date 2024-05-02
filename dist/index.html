@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Project</title>
-<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
-<body>
+  <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+  <body>
+    <form id="browser-form" novalidate>
+      <label for="email">E-Mail: </label>
+      <input type="text" id="email" />
 
-</body>
+      <label for="country">Country: </label>
+      <select id="country">
+        <option value="at">Austria</option>
+        <option value="de">Germany</option>
+        <option value="ch">Switzerland</option>
+        <option value="fr">France</option>
+      </select>
+
+      <label for="zip">ZIP: </label>
+      <input type="number" id="zip" />
+
+      <label for="password">Password: </label>
+      <input type="text" id="password" />
+
+      <label for="confirm-password">Confirm Password: </label>
+      <input type="text" id="confirm-password" />
+      <button id="submit-button">Submit</button>
+    </form>
+  </body>
 </html>
+
+
